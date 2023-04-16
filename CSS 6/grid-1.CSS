@@ -1,0 +1,14 @@
+
+.box{
+    background-color: slateblue;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto; /*cantidad de columnas y de que ancho o %*/
+    grid-template-rows: repeat(3,100px); /*repite 3 veces 100px, para agilizar*/
+    gap:30px 10px; /*indica cuanto de separacion entre cajas*/
+}

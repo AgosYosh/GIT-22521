@@ -1,0 +1,17 @@
+
+.box{
+    background-color: slateblue;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.contenedor{
+    height: 500px;
+    background-color: cornflowerblue;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr; /*medidas proporcionales con respecto al contenedor -> Este me da media pantalla para c/u (-) margenes*/
+    grid-template-rows: 100px 100px;
+    align-content: center;
+}

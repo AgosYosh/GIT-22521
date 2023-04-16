@@ -1,0 +1,19 @@
+
+.box{
+    background-color: slateblue;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.contenedor{
+    margin-top: 100px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+.box.box1{ /*box box tanto en ID como en CLASES es para cuando un objeto tiene ambas pero no solo 1, es decir tiene que tener si o si ambas*/
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    
+}

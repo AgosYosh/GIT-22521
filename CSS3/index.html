@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* usamos el style aca y no con un doc en css como antes por comodidad pero si o si si se entrega un trabajo hacer un doc de estilos de css aparte*/
+         {
+            box-sizing: border-box;}
+        @keyframes example {
+        from {background-color: red;}
+        to {background-color: yellow;}
+        }
+        div:last-child {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+        }
+
+        p{
+            padding: 40px;
+            background-color: rgb(248, 218, 214);
+            border: 5px solid rgb(234, 131, 131);
+            margin: 20px;
+            transform: translate (20px,10px) ;
+            transform: scale(0,5,2);
+            transform: rotate(20deg)
+           
+        }
+        p::first-letter{
+            font-size: 48px;
+            color:rgb(233, 14, 14);
+            font-family: 'Courier New', Courier, monospace;
+        }
+      
+        .anav{
+            padding: 5px;
+            margin: 20px;
+            text-decoration: none;
+            color: rgb(148, 50, 50);
+            font-size: 25px;
+            background-color: rgb(245, 112, 112);
+            border-radius: 10px;
+            display: inline-block; /*me da mas margen entre el boton y el inicio de la pagina sin achicar el padding,margin, etc*/
+            
+        }
+            a:link {color: rgb(231, 195, 15);}
+            a:hover {background-color: rgb(243, 211, 248);}
+            a:visited {color: rgb(138, 7, 164);}
+            a:active {background-color: rgb(188, 71, 234); color: white;}
+
+        #estatico {
+            background-color: beige;
+            width: 100px;
+            height: 100px;
+            position: static;
+        }
+        #fijo{
+            background-color: rgb(163, 241, 241);
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            z-index: 20;
+        }
+        #relativo{
+            background-color: aquamarine;
+            width: 160px;
+            height: 160px;
+            position: relative;
+            top: 80px;
+            right: 80px;
+            z-index: 300;
+        }
+        #absoluto{
+            background-color: rgb(6, 103, 70);
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+ /*el estilo sticky es como cuando fijas la primera fila de un excel*/
+    </style>
+</head>
+<body>
+    <nav>
+        <a class="anav" href="https://www.google.com">Home</a>
+        <a class="anav" href="">Nosotros</a>
+        <a class="anav" href="">Sucursales</a>
+        <a class="anav" href="https://www.udemy.com/home/my-courses/learning/">El nuevo hipervinculo</a>
+    </nav>
+    <p>Lorem😁, ipsum dolor sit amet consectetur adipisicing elit. Explicabo aspernatur alias, nihil eaque quae fuga a eligendi expedita accusamus magni, cumque amet! Nesciunt nihil doloribus voluptatem nostrum. Dolorum, nam eveniet.
+    Ab cum alias sunt nam omnis? Repellat dolorem architecto fugiat iste distinctio, aliquam beatae ipsam deleniti! Nobis magni placeat accusantium exercitationem dolor possimus, quod autem laborum maiores impedit repellendus sunt?
+    Mollitia excepturi, iure repellendus iusto quasi fugiat veritatis! Voluptatibus, officia itaque quis natus suscipit cum dolorum? Voluptatem dolores id cum ullam fuga repudiandae doloremque, asperiores, perspiciatis unde, officia corporis sequi.
+    Temporibus, dolore? Numquam, in iusto tempora, accusantium illo sapiente tenetur doloribus nisi fugit quaerat reprehenderit dignissimos vel saepe. A magni aliquam saepe quasi aut voluptas laudantium officia. Maiores, consequuntur totam!
+    Cupiditate debitis dolorem qui amet aperiam totam, distinctio expedita velit possimus consectetur, earum magni. Ipsam voluptas fugit, perferendis, delectus est quos optio expedita officia maiores at porro consectetur tempora deserunt!
+    </p>
+    
+    <hr>
+    
+    <div id="estatico">Beige estático 100*100</div>
+    <div id="fijo">Celeste 100*100 fijo abajo derecha</div> 
+    <div id="relativo">
+        <div id="absoluto"></div>
+    </div>
+    
+    </body>
+</html>
